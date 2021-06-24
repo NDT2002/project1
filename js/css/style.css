@@ -1,0 +1,308 @@
+body {
+    /* height: 100vmax; */
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+    width: 48px;
+}
+.icon-footer {
+    width: 32px;
+}
+/* navbar  */
+.navbar {
+    transition: all .3s;
+    background-color: #4FC1E7 !important;
+    box-sizing: content-box;
+}
+
+.color-bg{
+    background-color: #B3E0F2 !important;
+}
+
+
+.nav-item::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(211, 211, 211, 0.2);
+    transition: all.3s ease-in-out;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nav-item {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+}   
+.nav-link, .drop-link{
+    color: black !important;
+}
+.dropdown-item {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.205);
+}
+.dropdown-item:hover {
+    background-color: #4FC1E7 !important;
+    text-decoration: underline;
+    color: white !important;
+
+}
+.nav-item:hover{
+    box-shadow:10px 0 0px 1px rgba(0, 0, 0, 0.3);
+}
+.nav-item:hover::before {
+    width: 100%;
+}
+.nav-item:hover .nav-link {
+    text-decoration: underline;
+    color: white !important;
+}
+
+.nav-item.active .nav-link {
+    color: white!important;
+}
+.nav-item.active {
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+
+/* home  */
+.card {
+    margin: 1rem 1.5rem;
+}
+
+.featurette {
+    margin: 1rem;
+}
+.featurette-image {
+    border-radius: 15px !important;
+}
+.img-news {
+    width: 100% !important;
+}
+.img-news+.card-body {
+    background-color: rgb(44, 44, 252);
+    color: whitesmoke;
+}
+/* education*/
+.blog-contents {
+    margin-bottom: 1rem;
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 1rem;
+    border-top:solid 2px rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+}
+.blog-content-item {
+    height: 100%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    overflow: scroll;
+    border-bottom: 1px dashed black;
+    cursor: pointer;
+}
+.blog-content-item::-webkit-scrollbar {
+    display: none;
+}
+.blog-contents::-webkit-scrollbar {
+    width: 10px; 
+    border-radius: 10px;
+    background-color: rgba(14, 235, 14, 0.5);
+}
+
+.blog-contents::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 10px;
+}
+.blogs-nav {
+    background-color: #96C6D9;
+}
+.list-blog-item {
+    color: white;
+    width: 100%;
+    margin: 0 auto !important;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid  black;
+
+ }
+.actives {
+    background-color: #79FF91;
+    color: yellow;
+}
+/* education  */
+
+/* patient  */
+.blog-item {
+    background-color: rgba(245, 245, 111, 0.582);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 2px;
+}
+.display-4 {
+    border-bottom: 1px dashed black;
+}
+.display-4, .lead {
+    color: rgb(37, 19, 19);
+}
+ .col-md-6.px-0 {
+    border-right: 1px dashed black;
+}
+ .col-md-5+.col-md-6.px-0 {
+    border-right: none;
+    border-left: 1px dashed black;
+}
+.lead {
+    padding: 1rem;
+}
+.col-md-5 img {
+    border-radius: 50%;
+}
+/* research */
+.content-item {
+    display: none;
+}
+.show {
+    display: block;
+}
+.link-document {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+.link-videos{
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+}
+.visited {
+    color: black !important;
+    background-color: #fff !important;
+}
+.docs-item, .video-item {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 20px 2px;
+}
+/* products  */
+.link-videos,.link-document {
+    background-color: #6de482;
+    background-clip: content-box;
+}
+.list-item {
+    color: black;
+    transition: all .5s;
+    padding: 0.5rem;
+}
+
+
+.Products {
+    padding: 1rem;
+    height: max-content;
+    background-color: #b3e0f283;
+}
+.product-name {
+    width: fit-content;
+    background-color: #6de482;
+    background-clip: border-box;
+}
+.product-name:hover::after {
+    content: "click show";
+    text-decoration: underline;
+}
+.product-list {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px 2px;
+    padding-right: 3rem;
+    height: 350px;
+    width: 100%;
+    overflow-y: scroll;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.product-name {
+    margin: 1rem;
+}
+.card-title {
+    border-bottom: 1px dashed black;
+}
+.card-product {
+    margin-top: 0;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 0 25px 1px;
+    transition: all .5s ease-in-out;
+}
+.card-product:hover {
+    box-shadow:20px 0 0px 2px rgba(0, 0, 0, 0.3);
+}
+.card-img-top {
+    width: 150px;
+    height:150px;
+    margin: 0 auto;
+}
+.list-group-item {
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 110, 255);
+    box-shadow: rgba(0,0,0, 0.5) 0px 1px 2px 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.card-body.desc {
+    overflow-y: scroll;
+    cursor: pointer;
+}
+.card-body::-webkit-scrollbar {
+    display: none;
+}
+.product-list::-webkit-scrollbar {
+    height: 300px;
+    width: 1rem;
+    border-radius: 20px;
+    background-color: #6de482;
+
+}
+.product-list::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 20px;
+}
+/* /////////////// */
+/* contact us page  */
+section {
+    background-color: #b3e0f279;
+}
+.form {
+    padding-top: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 24px 2px;
+}
+/* site map  */
+li.site-map-item {
+    text-transform: uppercase;
+    font-size: larger;
+    margin: 15px;
+}
+.site-map-item>a {
+    color: black;
+}
+.site-map-item a {
+    text-decoration: none;
+}
+.site-map  {
+    line-height: 24px;
+}
+.site-map-item a:hover {
+    text-decoration: underline;
+}
